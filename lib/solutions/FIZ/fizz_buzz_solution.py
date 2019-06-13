@@ -7,9 +7,15 @@ def fizz_buzz(number):
     }
     deluxe = False
     for key in list(conversions.keys()):
-        # rewrite here
-        if number % int(key) == 0 or key in str(number):
+        criteria_count = 0
+        if number % int(key) == 0:
+            criteria_count += 1
+        if key in str(number):
+            criteria_count += 1
+        if criteria_count > 0:
             output.append((conversions[key]))
+        elif criteria_count == 2:
+            deluxe = True
     if deluxe:
         if number % 2 == 1:
             output.append('fake')
@@ -17,3 +23,4 @@ def fizz_buzz(number):
     if output == []:
         return str(number)
     return ' '.join(output)
+
