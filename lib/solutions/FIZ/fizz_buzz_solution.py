@@ -10,11 +10,13 @@ def fizz_buzz(number):
         criteria_count = 0
         if number % int(key) == 0:
             criteria_count += 1
+            print(str(criteria_count) + 'l 13')
         if key in str(number):
             criteria_count += 1
+            print(str(criteria_count) + 'l 16')
         if criteria_count > 0:
             output.append((conversions[key]))
-        elif criteria_count == 2:
+        if criteria_count == 2:
             deluxe = True
     if deluxe:
         if number % 2 == 1:
@@ -23,7 +25,5 @@ def fizz_buzz(number):
     if output == []:
         return str(number)
     return ' '.join(output)
-
-fizz_buzz(65)
 
 
