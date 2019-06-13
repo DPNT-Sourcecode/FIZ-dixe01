@@ -24,3 +24,6 @@ def fizz_buzz(number):
         return str(number)
     return ' '.join(output)
 
+fizz_buzz(65)
+
+

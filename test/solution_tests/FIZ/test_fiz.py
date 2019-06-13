@@ -29,7 +29,8 @@ class FizTest(unittest.TestCase):
         self.assertEqual(fb.fizz_buzz(352), 'fizz buzz')
 
     def test_new_deluxe(self):
-        self.assertEqual(fb.fizz_buzz(35), 'buzz fake deluxe')
+        self.assertEqual(fb.fizz_buzz(65), 'buzz fake deluxe')
         self.assertEqual(fb.fizz_buzz(36), 'fizz deluxe')
         self.assertEqual(fb.fizz_buzz(30), 'fizz buzz deluxe')
         self.assertEqual(fb.fizz_buzz(405), 'fizz buzz fake deluxe')
+
