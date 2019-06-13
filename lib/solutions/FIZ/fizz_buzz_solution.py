@@ -14,8 +14,11 @@ def fizz_buzz(number):
             if str(number)[0] != str(number)[i]:
                 deluxe = False
         if deluxe:
+            if number % 2 == 1:
+                output += 'fake '
             output += 'deluxe '
     if output == '':
         return str(number)
     return output.strip()
+
 
