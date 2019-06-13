@@ -1,3 +1,4 @@
 # noinspection PyUnusedLocal
 def fizz_buzz(number):
-    raise NotImplementedError()
+    return str(number)
+
