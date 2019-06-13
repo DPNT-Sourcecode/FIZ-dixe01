@@ -9,7 +9,7 @@ class FizTest(unittest.TestCase):
     def test_returns_fizz_for_3_multiples(self):
         self.assertEqual(fb.fizz_buzz(3), 'fizz')
         self.assertEqual(fb.fizz_buzz(6), 'fizz')
-        self.assertEqual(fb.fizz_buzz(999), 'fizz')
+        self.assertEqual(fb.fizz_buzz(996), 'fizz')
 
     def test_returns_buzz_for_5_multiples(self):
         self.assertEqual(fb.fizz_buzz(25), 'buzz')
@@ -32,4 +32,5 @@ class FizTest(unittest.TestCase):
         self.assertEqual(fb.fizz_buzz(11), 'deluxe')
         self.assertEqual(fb.fizz_buzz(111), 'fizz deluxe')
         self.assertEqual(fb.fizz_buzz(555), 'fizz buzz deluxe')
+
 
