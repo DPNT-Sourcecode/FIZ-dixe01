@@ -1,13 +1,13 @@
 # noinspection PyUnusedLocal
 def fizz_buzz(number):
-    output = ''
+    output = []
     conversions = {
         '3': 'fizz',
         '5': 'buzz',
     }
     for key in list(conversions.keys()):
         if number % int(key) == 0 or key in str(number):
-            output += (conversions[key] + ' ')
+            output.append((conversions[key]))
     if len(str(number)) > 1:
         deluxe = True
         for i in range(len(str(number))):
@@ -15,10 +15,11 @@ def fizz_buzz(number):
                 deluxe = False
         if deluxe:
             if number % 2 == 1:
-                output += 'fake '
-            output += 'deluxe '
-    if output == '':
+                output.append('fake')
+            output.append('deluxe')
+    if output == []:
         return str(number)
-    return output.strip()
+    return ' '.join(output)
+
 
 
