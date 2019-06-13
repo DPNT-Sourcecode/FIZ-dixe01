@@ -11,6 +11,3 @@ def fizz_buzz(number):
     if output == "":
         return str(number)
     return output.strip()
-
-
-
