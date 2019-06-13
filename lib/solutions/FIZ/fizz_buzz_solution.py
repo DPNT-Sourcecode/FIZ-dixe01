@@ -2,9 +2,11 @@
 def fizz_buzz(number):
     output = ""
     if number % 3 == 0:
-        output += "fizz"
+        output += "fizz "
     if number % 5 == 0:
-        output += "buzz"
+        output += "buzz "
     if output == "":
         return str(number)
+    return output.strip()
+
 
