@@ -22,5 +22,8 @@ class FizTest(unittest.TestCase):
         self.assertEqual(fb.fizz_buzz(301), 'fizz')
 
     def test_returns_buzz_for_nums_with_5_in(self):
-        self.assertEqual(fb.fizz_buzz(51), 'buzz')
-        self.assertEqual(fb.fizz_buzz(501), 'buzz')
+        self.assertEqual(fb.fizz_buzz(52), 'buzz')
+        self.assertEqual(fb.fizz_buzz(502), 'buzz')
+
+    def test_returns_fizz_buzz_for_nums_with_5_and_3(self):
+        self.assertEqual(fb.fizz_buzz(352), 'fizz buzz')
